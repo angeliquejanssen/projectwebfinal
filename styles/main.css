@@ -363,13 +363,13 @@ input:checked + .slider:before {
 
 /* Media Queries*/
 
-@media(min-width:725px) {
+@media(min-width:767px){
     article {
         width: 40%;
     }
 }
 
-@media(min-width:950px) {
+@media(min-width:1025px) {
     article {
         width: 25%;
     }
