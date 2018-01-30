@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Nexa_Free_Light';
+    src: url('Nexa_Free_Light-webfont.woff2') format('woff2'), url('Nexa_Free_Light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'nexa_bold';
+    src: url('nexa_bold-webfont.woff') format('woff'), url('nexa_bold-webfont.woff2') format('woff2');
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Nexa_Free_Light';
+    font-size: 1em;
+    background-color: #fff;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    align-items: baseline;
+    display: flex;
+    padding-left: 1em;
+}
+
+header {
+    height: 0.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    background-color: #ffffff;
+    padding: 3em 3em 3em 2em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-family: 'nexa_bold';
+    font-size: 1.250em;
+    color: #00D66C;
+}
+
+header img {
+    height: 3.5em;
+}
+
+nav li {
+    margin: 0 0.8em;
+    display: flex;
+    font-family: 'nexa_bold';
+    color: #00D66C;
+    text-decoration: none;
+}
+
+.inloggen {
+    border: none;
+    border-radius: 0.8em;
+    padding: 0.4em 0.5em;
+    background-color: #ff3268;
+    color: #ffffff;
+    display: flex;
+    box-shadow: 0em 0.2em #B3254A;
+}
+
+h1 {
+    font-family: 'nexa_bold';
+    font-size: 1.9em;
+    color: #2800a0;
+    background-color: #F3E5D8;
+    padding: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section img {
+    height: 7em;
+}
+
+button:nth-of-type(1) {
+    background-image: url(icons/downloadwit.png);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+
+button:nth-of-type(2) {
+    background-image: url(icons/delete.png);
+    background-color: #ff3268;
+    box-shadow: 0em 0.2em #B3254A;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+
+button {
+    height: 4em;
+    margin: 0.5em;
+    background-color: #00D66C;
+    width: 4em;
+    color: #fff;
+    border-radius: 5em;
+    border: none;
+    box-shadow: 0em 0.2em #01964C;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #01964C;
+    box-shadow: 0em 0.2em #01964C;
+    transition-duration: 0.6s;
+}
+
+section a {
+    font-family: 'nexa_bold';
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #2800a0;
+    padding: 1em;
+}
+
+section:nth-of-type(odd) {
+    background-color: rgba(40, 0, 160, 0.3);
+}
+
+section:nth-of-type(even) {
+    background-color: rgba(40, 0, 160, 0.5);
+}
