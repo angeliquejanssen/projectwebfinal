@@ -70,7 +70,7 @@ header img {
     height: 3.5em;
 }
 
-nav ul li:nth-child(3) {
+.inloggen {
     border: none;
     border-radius: 0.8em;
     padding: 0.4em 0.5em;
@@ -162,7 +162,7 @@ h1 + img + a + section {
 
 h2 {
     font-family: 'nexa_bold';
-    font-size: 150%;
+    font-size: 1.8em;
     color: #2800a0;
     padding-top: 1em;
 }
@@ -380,6 +380,64 @@ input:checked + .slider:before {
 /* Media Queries*/
 
 
+/* MEDIA QUERIES : TABLET */
+
+@media(min-width:768px) {
+    nav ul li a {
+        font-size: 1.8em;
+    }
+    article {
+        width: 40%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h1 + img + a + section {
+        top: 36em;
+        margin-left: 1.5em;
+    }
+    h1 + img + a {
+        top: 3.5em;
+        left: 0.7em;
+        font-size: 4.5em;
+    }
+    h1 + button:first-of-type {
+        padding: 2em;
+        background-image: url(icons/add.png);
+        background-size: 2em;
+        background-repeat: no-repeat;
+        background-position: 50% 50%
+    }
+    h1 + button:nth-of-type(2) {
+        padding: 2em;
+        background-image: url(icons/downloadwit.png);
+        background-size: 2em;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    section:nth-of-type(1) a {
+        font-size: 1.5em;
+    }
+    h1 + button {
+        margin: 0.35em;
+        padding: 2.5em 0.5em 0.5em 0.5em;
+        background-color: #00D66C;
+        width: 3.5em;
+        font-family: 'nexa_bold';
+        font-size: 1em;
+        color: #fff;
+        border-radius: 5em;
+        border: none;
+        box-shadow: 0em 0.2em #01964C;
+    }
+    h2 {
+        font-size: 3em;
+        color: #2800a0;
+        padding-top: 0.5em;
+    }
+}
+
+
 /* MEDIA QUERIES : DESKTOP */
 
 @media(min-width:992px) {
@@ -390,6 +448,45 @@ input:checked + .slider:before {
         display: block;
     }
     h1 + img {
-        width:
+        height: 20em;
+        object-fit: cover;
+    }
+    h1 + img + a + section {
+        top: 27em;
+        margin-left: 1.5em;
+    }
+    h1 + img + a {
+        top: 3.5em;
+        left: 0.7em;
+        font-size: 4.5em;
+    }
+    h1 + button:first-of-type {
+        padding: 2em;
+        background-image: url(icons/add.png);
+        background-size: 2em;
+        background-repeat: no-repeat;
+        background-position: 50% 50%
+    }
+    h1 + button:nth-of-type(2) {
+        padding: 2em;
+        background-image: url(icons/downloadwit.png);
+        background-size: 2em;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    section:nth-of-type(1) a {
+        font-size: 1.5em;
+    }
+    h1 + button {
+        margin: 0.35em;
+        padding: 2.5em 0.5em 0.5em 0.5em;
+        background-color: #00D66C;
+        width: 3.5em;
+        font-family: 'nexa_bold';
+        font-size: 1em;
+        color: #fff;
+        border-radius: 5em;
+        border: none;
+        box-shadow: 0em 0.2em #01964C;
     }
 }
