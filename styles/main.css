@@ -200,7 +200,7 @@ h1 + button {
 
 h1 + img + a + div {
     position: absolute;
-    top: 23em;
+    top: 22em;
     padding: 1em;
     display: flex;
     align-items: center;
