@@ -1,4 +1,4 @@
-        /* Nexa Font*/
+/* Nexa Font*/
 
 @font-face {
     font-family: 'Nexa_Free_Light';
@@ -11,7 +11,7 @@
 }
 
 
-/* Body */
+/* BODY */
 
 html,
 body {
@@ -34,7 +34,7 @@ body {
 /* Header & Navigation */
 
 header {
-    height: 2em;
+    height: 0.5em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -81,8 +81,6 @@ header img {
 }
 
 
-/* Titel verhaal + save/download knoppen */
-
 h1 {
     font-family: 'nexa_bold';
     font-size: 1.9em;
@@ -90,40 +88,8 @@ h1 {
     background-color: #F3E5D8;
     padding: 1em;
     margin: 0em;
-}
-
-
-/*  Interactieve knoppen in verhaal */
-
-button:focus {
-    background-image: url(icons/addpink.png);
-}
-
-
-main > img {
     width: 100%;
 }
-
-
-/* MEDIA QUERIES */
-
-
-/* MEDIA QUERIES : TABLET - 700px */
-
-@media(min-width:700px) {
-    nav ul li a {
-        font-size: 1.5em;
-    }
-}
-
-/* MEDIA QUERIES : DESKTOP - 1000px */
-@media(min-width:1000px) {
-    nav ul li a {
-        font-size: 1.5em;
-    }
-
-    img:first-of-type {
-    display: none;
-    }
-
+main img {
+    width: 100%;
 }

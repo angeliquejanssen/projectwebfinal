@@ -73,7 +73,12 @@ input {
     margin: 0.2em auto 0.8em auto;
     display: flex;
     flex-direction: column;
-    border: .0625rem solid #91a3b7;
+    border: .0625em solid #91a3b7;
+}
+
+input:focus {
+    border: 0.2em solid #2800a0;
+    outline: none;
 }
 
 button {

@@ -1,4 +1,4 @@
-@font-face {
+        @font-face {
     font-family: 'Nexa_Free_Light';
     src: url('Nexa_Free_Light-webfont.woff2') format('woff2'), url('Nexa_Free_Light-webfont.woff') format('woff');
 }
@@ -8,9 +8,11 @@
     src: url('nexa_bold-webfont.woff') format('woff'), url('nexa_bold-webfont.woff2') format('woff2');
 }
 
+
 /* Body */
 
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -25,8 +27,6 @@ body {
 * {
     box-sizing: border-box;
 }
-
-
 
 
 /* Header & Navigation */
@@ -79,75 +79,83 @@ header img {
 }
 
 
-
 /* LINK HOVER EFFECT */
 
+
 /* Buzz */
+
 @-webkit-keyframes hvr-buzz {
-  50% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-  100% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
 }
+
 @keyframes hvr-buzz {
-  50% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-  100% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
 }
+
 .hvr-buzz {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-}
-.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
-  -webkit-animation-name: hvr-buzz;
-  animation-name: hvr-buzz;
-  -webkit-animation-duration: 0.15s;
-  animation-duration: 0.15s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
 }
 
-
-
-
+.hvr-buzz:hover,
+.hvr-buzz:focus,
+.hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
 
 h1 {
     font-family: 'nexa_bold';
-    font-size: 1.9em;
+    font-size: 2.4em;
     color: #2800a0;
     background-color: #F3E5D8;
     padding: 1em;
+    margin: 0;
 }
 
-section {
+div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-section img {
+div img {
     height: 7em;
 }
 
-button:nth-of-type(1) {
+button:first-of-type {
     background-image: url(icons/downloadwit.png);
     background-size: 1.5em;
     background-repeat: no-repeat;
     background-position: 50% 50%
+}
+
+button:first-of-type:focus {
+    background-image: url(icons/checkmark-xxl.png);
+    outline: none;
 }
 
 button:nth-of-type(2) {
@@ -159,6 +167,10 @@ button:nth-of-type(2) {
     background-position: 50% 50%
 }
 
+button:nth-of-type(2):focus {
+    background-image: url(icons/deleteopen.png);
+    outline: none;
+}
 button {
     height: 4em;
     margin: 0.5em;
@@ -180,7 +192,7 @@ button:active {
     transition-duration: 0.6s;
 }
 
-section a {
+div a {
     font-family: 'nexa_bold';
     font-size: 1.5em;
     text-decoration: none;
@@ -188,29 +200,31 @@ section a {
     padding: 1em;
 }
 
-section:nth-of-type(odd) {
+main {
     background-color: rgba(40, 0, 160, 0.3);
 }
 
-section:nth-of-type(even) {
+div:nth-of-type(2) {
     background-color: rgba(40, 0, 160, 0.5);
 }
 
 
-
-
 /* Media Queries*/
+
 
 /* MEDIA QUERIES : TABLET */
 
 @media(min-width:700px) {
-nav ul li a {
-    font-size: 1.5em;
-}
+    nav ul li a {
+        font-size: 1.5em;
+    }
 
 
-/* MEDIA QUERIES : DESKTOP */
-@media(min-width:1000px) {
-nav ul li a {
-    font-size: 1.5em;
-}
+
+
+
+    /* MEDIA QUERIES : DESKTOP */
+    @media(min-width:1000px) {
+        nav ul li a {
+            font-size: 1.5em;
+        }
