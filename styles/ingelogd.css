@@ -1,4 +1,4 @@
-/* NEXA FONT - LIGHT & BOLD */
+        /* NEXA FONT - LIGHT & BOLD */
 
 @font-face {
     font-family: 'Nexa_Free_Light';
@@ -9,9 +9,6 @@
     font-family: 'nexa_bold';
     src: url('nexa_bold-webfont.woff') format('woff'), url('nexa_bold-webfont.woff2') format('woff2');
 }
-
-
-
 
 
 /* BODY */
@@ -32,9 +29,6 @@ body {
 * {
     box-sizing: border-box;
 }
-
-
-
 
 
 /* HEADER & NAVIGATION */
@@ -87,7 +81,6 @@ header img {
 }
 
 
-
 /* LAATST GEOPEND */
 
 header + a {
@@ -104,9 +97,6 @@ header + a:hover {
     color: #00D66C;
     transition-duration: 0.6s;
 }
-
-
-
 
 
 /* FEATURED TODAY */
@@ -186,11 +176,8 @@ h1 + img + a + div {
 }
 
 
-
-
-
-
 /* NIGHT STORIES TOGGLE MET JAVASCRIPT */
+
 #myDIV {
     display: flex;
     flex-direction: row;
@@ -208,9 +195,6 @@ h1 + img + a + div {
 #moon:active {
     background-color: #2800a0;
 }
-
-
-
 
 
 /* SEARCH BAR */
@@ -242,10 +226,8 @@ h2 {
 }
 
 
-
-
-
 /* VERHALEN OVERZICHT */
+
 article {
     width: 180%;
     margin: 2em;
@@ -294,9 +276,8 @@ main div > a {
 }
 
 
-
-
 /* MINUTEN 5-10-15 */
+
 .leestijd {
     display: flex;
     flex-direction: row;
@@ -394,10 +375,9 @@ button:active {
 }
 
 
-
-
-
 /* LINK HOVER EFFECT - Bron : http://ianlunn.github.io/Hover/ */
+
+
 /* LINK HOVER - BUZZ */
 
 @-webkit-keyframes hvr-buzz {
@@ -444,11 +424,8 @@ button:active {
 }
 
 
-
-
-
-
 /* MEDIA QUERIES */
+
 
 /* MEDIA QUERIES : TABLET - 700px */
 
@@ -491,20 +468,10 @@ button:active {
         justify-content: flex-end;
         margin: 1em;
     }
-
     header + a {
         font-size: 2em;
-
-
     }
-
-
-
-
-
-
     /* MEDIA QUERIES : DESKTOP - 1000px */
-
     @media(min-width:1000px) {
         nav ul li a {
             font-size: 1.5em;
@@ -546,4 +513,10 @@ button:active {
             cursor: text;
             font-size: 1.1em;
             display: flex;
+        }
+        #myDIV {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
         }

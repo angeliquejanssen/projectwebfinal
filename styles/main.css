@@ -92,8 +92,8 @@ header img {
 /* NIGHT STORIES TOGGLE MET JAVASCRIPT */
 #myDIV {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    width: 45%;
     justify-content: center;
 }
 
@@ -479,7 +479,6 @@ h2 {
 
 
 
-
 /* MEDIA QUERIES : DESKTOP - 1000px */
 
 @media(min-width:1000px) {
@@ -523,4 +522,12 @@ input {
     cursor: text;
     font-size: 1.1em;
     display: flex;
+}
+
+
+#myDIV {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
