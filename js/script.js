@@ -1,17 +1,21 @@
-var buttonArticle = document.querySelector('article button');
-var buttonFilter = document.querySelector('form button');
-var fieldset = document.querySelector('fieldset');
+/* BRON : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show */
+/*jslint browser:true */
 
 
-function filter() {
-    fieldset.classList.toggle('show');
+
+
+
+
+
+/* NIGHT STORIES TOGGLE */
+
+function myFunction() {
+    "use strict";
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+    }
 }
-
-function checkmark() {
-    buttonArticle.classList.toggle('show');
-}
-
-buttonArticle.addEventListener('click', checkmark);
-buttonFilter.addEventListener('click', filter);
-
 

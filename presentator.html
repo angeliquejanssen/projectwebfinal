@@ -6,22 +6,22 @@
 
     <link rel="stylesheet" type="text/css" href="styles/presentator.css">
 
-    <title>Verhaal 85 - Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</title>
+    <title>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</title>
 </head>
 
 <body>
 
-<!-- HEADER + NAVIGATION -->
+    <!-- HEADER + NAVIGATION -->
     <header>
-        <a href="index.html"><img src="styles/images/transavialogo.png" alt="Transavia logo"></a>
+        <a href="index.html"><img class="logo" src="styles/images/transavialogo.png" alt="Transavia logo"></a>
 
         <nav>
             <ul>
-                <li>
+                <li class="hvr-buzz">
                     <a href="index.html">Home</a></li>
-                <li>
+                <li class="hvr-buzz">
                     <a href="mijnverhalen.html">Mijn Verhalen</a></li>
-                <li>
+                <li class="hvr-buzz">
                     <a class="inloggen" href="login.html">Inloggen</a></li>
             </ul>
         </nav>
@@ -30,22 +30,52 @@
 
 
 
-    <h1>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h1>
+    <!-- TITLE + BUTTONS SAVE & DOWNLOAD -->
+
+    <div>
+        <h1>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h1>
+        <button></button>
+        <button></button>
+    </div>
+
+
+
+    <!-- STORY -->
 
     <main>
 
-        <img src="styles/images/speels-mobile.png" alt="verhaal mobiel" width="455" height="2704" usemap="#gamebuttonsmap">
+        <img src="styles/images/speels-mobile.png" alt="verhaal mobiel" usemap="#gamebuttonsmap">
 
-        <img src="styles/images/presentator.jpg" alt="verhaal desktop" usemap="#gamebuttonsmap">
+        <img src="styles/images/test-speels.png" alt="verhaal desktop" usemap="#gamebuttonsmap">
 
         <map name="gamebuttonsmap">
-            <button><area shape="rect" coords="1000,100,150,150" alt="button1" target="_self"></button>
-            <area shape="rect" coords="1075,550,950,450" alt="button2" href="sun.htm">
-            <area shape="rect" coords="1075,700,950,600" alt="button3" href="sun.htm">
-            <area shape="rect" coords="550,950,700,800" alt="button3" href="sun.htm">
-            <area shape="rect" coords="1075,700,950,600" alt="button3" href="sun.htm">
+            <area shape="rect" coords="1075,700,950,600" alt="button3" href="index.html">
+            <area shape="rect" coords="550,950,700,800" alt="button3" href="index.html">
+            <area shape="rect" coords="1075,700,950,600" alt="button3" href="index.html">
         </map>
 
+
+
+
+        <!-- COMMENT SECTION -->
+
+        <h2>Wat vond je van het verhaal?</h2>
+
+        <div>
+
+            <form>
+                <fieldset>
+                    <label>
+                        <input type="text">
+                    </label>
+
+                    <button type="submit" formaction="reactie.html">Plaats reactie</button>
+                </fieldset>
+            </form>
+
+            <a href="presentatorgelezen.html">Ik heb dit verhaal gelezen ✓</a>
+
+        </div>
     </main>
 
 </body>

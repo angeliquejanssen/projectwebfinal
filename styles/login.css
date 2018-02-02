@@ -11,7 +11,8 @@
 
 
 
-/* Body*/
+
+/* Body */
 
 body {
     background: #f3e5d8;
@@ -30,7 +31,10 @@ h1 {
 
 
 
-/* Log In Form */
+
+
+
+/* LOG IN FORM */
 form {
     font-family: 'nexa_bold';
     color: #000000;
@@ -95,6 +99,36 @@ button {
 }
 
 
+
+
+
+
+/* VALIDATE : EMAIL & PASSWORD FIELDS */
+
+input[type=email],
+input[type=password],
+fieldset {
+/* Hiermee krijgt de gebruiker een melding als het veld niet goed is ingevuld */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input:invalid {
+    color: red;
+    border-color: red;
+    margin: 1em;
+}
+
+input:valid {
+    color: green;
+    border-color: green;
+    margin: 1em;
+}
+
+
+
+
+
 /* Go to website without logging in */
 
 a:nth-of-type(2) {
@@ -102,6 +136,8 @@ a:nth-of-type(2) {
     font-size: em;
     transition-duration: 0.6s;
 }
+
+
 
 
 
