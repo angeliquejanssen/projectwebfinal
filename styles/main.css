@@ -89,9 +89,6 @@ header img {
 
 
 
-
-
-
 /* NIGHT STORIES TOGGLE MET JAVASCRIPT */
 #myDIV {
     display: flex;
@@ -440,7 +437,7 @@ button:active {
 /* MEDIA QUERIES */
 /* MEDIA QUERIES : TABLET - 700px */
 
-@media(min-width:200px) {
+@media(min-width:700px) {
 nav ul li a {
     font-size: 1.5em;
 }
